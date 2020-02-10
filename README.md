@@ -12,7 +12,7 @@
 ### Association
 - has_many :messages
 - has_many :users_groups
-- has_many :groups,through: :users_groups
+- has_many :groups,through: :groups_users
 
 ## messagesテーブル
 |Column|Type|Options|
@@ -33,9 +33,8 @@
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :users_groups
-- has_many :users, through: :users_groups
-
-
+- has_many :users, through: :groups_users
+- has_many :messages
 
 ## groups_usersテーブル
 
