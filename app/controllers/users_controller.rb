@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def index
+    @users = User.search(params[:keyword], current_user.id)
     respond_to do |format|
       format.html
       format.json
@@ -22,4 +23,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email)
   end
+
+
 end
