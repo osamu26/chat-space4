@@ -1,5 +1,6 @@
 $(function() {
   function addUser(user) {
+    console.log(user)
     let html = `
       <div class="chat-group-user clearfix">
         <p class="chat-group-user__name">${user.name}</p>
@@ -10,6 +11,7 @@ $(function() {
   }
 
   function addNoUser() {
+    console.log("koikoi")
     let html = `
       <div class="chat-group-user clearfix">
         <p class="chat-group-user__name">ユーザーが見つかりません</p>
@@ -31,6 +33,7 @@ $(function() {
   }
   $("#user-search-field").on("keyup", function() {
     let input = $("#user-search-field").val();
+    console.log("jiji")
     $.ajax({
       type: "GET",
       url: "/users",
@@ -38,6 +41,7 @@ $(function() {
       dataType: "json"
     })
       .done(function(users) {
+        console.log(users)
         $("#user-search-result").empty();
 
         if (users.length !== 0) {
