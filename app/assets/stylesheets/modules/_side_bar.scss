@@ -33,6 +33,7 @@
       }
       .icon {
         color:white;
+        font-size: $side_header_font;
         
       }
     }
@@ -48,11 +49,14 @@
         color:$white;
         font-size:$side_group_name;
         list-style: none;
+        text-decoration: none;
       }
       &__message {
         color:$white;
         font-size:$side_group_message;
         list-style: none;
+        margin-top: 5px;
+        text-decoration: none;
       }
 
     }
