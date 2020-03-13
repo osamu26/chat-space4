@@ -3,8 +3,6 @@
     .left-header
       .left-header__title
         = @group.name
-        -# = current_user.
-        miki
       %ul.left-header__member
         Member
         - @group.users.each do |user|
