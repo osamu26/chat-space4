@@ -35,7 +35,6 @@
       }
       .icon {
         color:white;
-        font-size: $side_header_font;
         
       }
     }
@@ -48,6 +47,9 @@
     .group {
       padding:20px;
       text-decoration: none;
+      .grouplink{
+        text-decoration: none;
+      }
       &__name {
         color:$white;
         font-size:$side_group_name;
