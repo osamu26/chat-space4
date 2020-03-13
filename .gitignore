@@ -16,3 +16,4 @@
 # Ignore Byebug command history file.
 .byebug_history
 public/uploads/*
+git rm --cached config/secrets.yml
