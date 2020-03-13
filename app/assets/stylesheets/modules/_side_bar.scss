@@ -22,6 +22,7 @@
     &__name {
       font-size: $side_header_name;
       color: $white;
+      
     }
     &__lists {
       display:flex;
@@ -46,11 +47,12 @@
       &__name {
         color:$white;
         font-size:$side_group_name;
+        list-style: none;
       }
       &__message {
         color:$white;
         font-size:$side_group_message;
-
+        list-style: none;
       }
 
     }

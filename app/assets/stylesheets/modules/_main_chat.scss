@@ -21,6 +21,7 @@
         display:flex;
         font-size:12px;
         margin-top:15px;
+        color:#999999;
         .member {
           margin-left:5px;
           display:inline-block;
@@ -34,6 +35,7 @@
       line-height:40px;
       margin-top:28px;
       padding: 0 20px;
+      color:#38aef0;
     }
     
   }
@@ -97,7 +99,7 @@
       }
     }
     &__submit {
-      background-color:skyblue ;
+      background-color:#38aef0;
       border: none;
       color: $white;
       float: right;
