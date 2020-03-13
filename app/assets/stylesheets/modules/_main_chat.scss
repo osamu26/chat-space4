@@ -10,7 +10,7 @@
     display: flex;
     border-bottom: 1px solid #eeeeee;
 
-    
+
     .left-header {
       float:left;
       width:100%;
@@ -53,6 +53,7 @@
     padding: 46px 40px 0;
     height: calc(100vh - 100px - 90px);
     overflow: scroll;
+    background-color: #fafafa;
     .message {
       .upper-message {
         display: flex;
